@@ -1,0 +1,17 @@
+.show-random .select-range #random-form{
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    text-align: right;   
+}
+#random-form #min, #random-form #max, #random-form button{
+    margin-bottom: 1rem ;
+    width: 100px;
+}
+.show-random .show-result .result{
+    font-size: 30px;
+}
+
+.show-result #alert{
+    color: red;
+}

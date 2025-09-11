@@ -1,0 +1,87 @@
+.logo{
+    background: white;
+    display: block;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+.logo .logo-text{
+    font-family: 'Poppins', sans-serif; /* font từ Google Fonts */
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00A693, #1E90FF); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* chữ có gradient */
+}
+.logo img{
+    width: 4rem;
+    padding: 0;
+    margin: 0; 
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    align-items: center;
+    background: #00A693;
+    border-radius: 10px;
+
+}
+.nav .links{
+    display: flex;
+    gap: 2rem;
+    padding-right: 6rem;
+}
+.nav .links a{
+    color: white;
+    transition: color 0.5s ease;
+}
+.nav .links a:hover{
+    color:#000055;
+}
+/* drop-down */
+/* bọc bên ngoài */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* nội dung ẩn */
+.dropdown-content {
+  /* display: none; */
+  position: absolute;
+  background: rgba(0, 166, 147, 0.8);
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+  border-radius: 6px;
+
+   /* thay cho display:none */
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+
+  /* đây mới là transition có tác dụng */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* style cho từng link con */
+.dropdown-content .link {
+  display: block;
+  padding: 10px 12px;
+
+}
+
+
+
+/* hover vào cha thì hiện con */
+.dropdown:hover .dropdown-content {
+  /* display: block; */
+  /* thay cho display:block */
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}

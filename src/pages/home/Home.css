@@ -1,0 +1,35 @@
+#hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;           /* full bề ngang container */
+  min-height: 80vh;      /* tùy: cao 80% màn hình */
+  box-sizing: border-box;
+  padding: 2rem 3rem;    /* chừa 2 bên, có thể chỉnh */
+  text-align: center;
+}
+
+#hero .text{ flex: 1.5; }
+#hero .text h1{ font-size: 3rem; padding: 0; margin: 0;}
+#hero .text p{ font-size: 1.2rem; }
+#hero .text button{
+    background-color: #00A693;
+    width: 20rem;
+    height: 2rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+
+    transition: color,background-color 0.5s ease;
+}
+#hero .text button:hover{background-color:#ffffff; color: #000055; border: 1px solid #000055;}
+
+#hero .img{ flex: 1; }
+#hero .img img{
+  max-width: 100%;       /*  để ảnh co theo cột */
+  height: auto;
+  display: block;        /* tránh khoảng trắng dưới ảnh */
+
+}

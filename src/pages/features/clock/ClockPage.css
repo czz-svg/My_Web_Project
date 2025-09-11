@@ -1,0 +1,18 @@
+#clock-server{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+#clock-server .show-clock{
+
+}
+#clock-server .show-clock h1{
+    font-size: 7rem;
+    padding: 0;
+    margin: 0;
+}
+#clock-server .show-clock h3{
+    text-align: right;
+    font-size: 1.5rem;
+}
