@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 export default function Random() {
   const [result, setResult] = useState();
     const[alert,setAlert] = useState(false)
@@ -34,7 +33,7 @@ export default function Random() {
               id="min"
               min={0}
               onKeyDown={blockDecimalKeys}
-              value={1}
+              
             />
           </label>
           <label htmlFor="max">
@@ -44,7 +43,7 @@ export default function Random() {
               id="max"
               min="0"
               onKeyDown={blockDecimalKeys}
-              value={100}
+              
             />
           </label>
           <button type="submit">Generate</button>

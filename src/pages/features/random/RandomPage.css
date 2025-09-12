@@ -1,3 +1,6 @@
+.show-random{
+    margin: 1rem;
+}
 .show-random .select-range #random-form{
     display: flex;
     flex-direction: column;

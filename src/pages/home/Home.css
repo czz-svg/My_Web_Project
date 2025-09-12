@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 #hero{
   display: flex;
   align-items: center;
@@ -9,10 +12,10 @@
   text-align: center;
 }
 
-#hero .text{ flex: 1.5; }
-#hero .text h1{ font-size: 3rem; padding: 0; margin: 0;}
-#hero .text p{ font-size: 1.2rem; }
-#hero .text button{
+#hero .text{ flex: 1.5; margin: 0 3rem;}
+#hero .text h1{ text-align: left; font-size: 3rem; padding: 0; margin: 0;}
+#hero .text p{ font-size: 1.2rem; text-align: justify;}
+.btn-start{
     background-color: #00A693;
     width: 20rem;
     height: 2rem;
@@ -24,7 +27,7 @@
 
     transition: color,background-color 0.5s ease;
 }
-#hero .text button:hover{background-color:#ffffff; color: #000055; border: 1px solid #000055;}
+.btn-start:hover{background-color:#ffffff; color: #000055; border: 1px solid #000055;}
 
 #hero .img{ flex: 1; }
 #hero .img img{
@@ -32,4 +35,21 @@
   height: auto;
   display: block;        /* tránh khoảng trắng dưới ảnh */
 
+}
+
+#slider-features .slider-features-title{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin: 6rem 12rem 0;
+}
+#slider-features .slider-features-title h1{
+  font-size: 3rem;
+  margin: 0;
+}
+#slider-features .slider-features-title p{
+  font-size: 1.2rem;
+  text-align: justify;
 }
