@@ -11,7 +11,7 @@
     font-family: 'Poppins', sans-serif; /* font từ Google Fonts */
   font-size: 2.5rem;
   font-weight: 700;
-  background: linear-gradient(90deg, #00A693, #1E90FF); 
+  background: linear-gradient(90deg, #ff932e, #3c7aff); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; /* chữ có gradient */
 }

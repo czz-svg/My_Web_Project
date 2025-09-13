@@ -1,0 +1,8 @@
+{
+    "features":[
+        {"link":"/features/weather","src":"img/slider-img/weather-slider.png","description":"Weather"},
+        {"link":"/features/clock","src":"img/slider-img/clock-slider.png","description":"Clock"},
+        {"link":"/features/quiz","src":"img/slider-img/quiz-slider.png","description":"Quiz"},
+        {"link":"/features/random","src":"img/slider-img/random-slider.png","description":"Random"}
+        ]
+}

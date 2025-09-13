@@ -2,10 +2,10 @@ import Slider from "../../components/Slider";
 import "./Home.css";
 export default function Home() {
   return (
-    <div>
+    <main id="home-page">
       <section id="hero">
         <div className="text">
-          <h1>colorful life</h1>
+          <h1>Colorful Life</h1>
           <p>
             Welcome to my personal website, a small corner on the internet that
             I built with the hope of bringing you not only useful tools but also
@@ -48,6 +48,38 @@ export default function Home() {
         </div>
         <Slider />
       </section>
-    </div>
+      <section className="video-container">
+        <h1>Useful Video</h1>
+        <div className="video-content">
+          <div className="video-screen">
+            <iframe
+              src="https://www.youtube.com/embed/W1EqkmoUgDU"
+              frameborder="0"
+              title="YouTube video"
+              allowFullScreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+          </div>
+          <div className="video-text">
+            <div className="video-text-content">
+              <img src="./img/tick-icon.png" alt="tick-icon" />
+              <h2>Helpful tutorial</h2>
+            </div>
+            <div className="video-text-content">
+              <img src="./img/tick-icon.png" alt="tick-icon" />
+              <h2>Entertaining</h2>
+            </div>
+            <div className="video-text-content">
+              <img src="./img/tick-icon.png" alt="tick-icon" />
+              <h2>Practical tips</h2>
+            </div>
+            <div className="video-text-content">
+              <img src="./img/tick-icon.png" alt="tick-icon" />
+              <h2>Exciting</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

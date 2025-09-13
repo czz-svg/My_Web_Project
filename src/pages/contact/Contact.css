@@ -1,9 +1,10 @@
 .contact-page {
   max-width: 700px;
   margin: 40px auto;
-  padding: 0 16px;
-  color: #222;
+  padding: 16px;
+
   font-family: sans-serif;
+  background:rgba(0, 166, 147, 0.1);
 }
 
 .contact-page h1 {
@@ -16,6 +17,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  
 }
 
 .contact-form label {
@@ -23,7 +25,7 @@
   flex-direction: column;
   font-weight: 600;
   font-size: 0.9rem;
-  color: #555;
+ 
 }
 
 .contact-form input,
@@ -32,12 +34,13 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   transition: border-color 0.25s, box-shadow 0.25s;
+  
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #00a693;
+  border-color: #00A693;
   box-shadow: 0 0 0 3px rgba(0,166,147,.2);
 }
 

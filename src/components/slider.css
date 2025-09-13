@@ -47,24 +47,27 @@
   color: #000055;
 }
 .nav-btn {
+
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 2.5rem;
-  height: 3rem;
-  font-size: 1.5rem;
+  height: 3.5rem;
+  font-size: 1rem;
   font-weight: bold;
   background: rgba(0, 0, 0, 0.5);
   border: none;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   color: #ffffff;
+  
 }
 .nav-btn.next {
-  right: 10px;
+  right: 0px;
   border-radius: 0 999px 999px 0;
+  
 }
 .nav-btn.prev {
-  left: 10px;
+ 
   border-radius: 999px 0 0 999px;
 }
