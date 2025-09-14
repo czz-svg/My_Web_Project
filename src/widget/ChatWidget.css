@@ -1,66 +1,70 @@
-.cw-root{
-    position: fixed;
-    inset: auto var(--cw-right,20px) var(--cw-bottom,20px) auto;
-    z-index: 999999;
+.cw-root {
+  position: fixed;
+  inset: auto var(--cw-right, 20px) var(--cw-bottom, 20px) auto;
+  z-index: 999999;
 }
 .cw-fab,
-.cw-panel{
-    pointer-events: auto;
+.cw-panel {
+  pointer-events: auto;
 }
-.cw-fab{
-    width: 56px;
-    height: 56px;
-    border: none;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-    background: linear-gradient(to right, rgba(225, 106, 255, 0.5),rgba(0, 166, 147, 0.5));
-    border-radius: 999px;
-    font-size: 22px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 1s ease;
+.cw-fab {
+  width: 56px;
+  height: 56px;
+  border: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    to right,
+    rgba(225, 106, 255, 0.5),
+    rgba(0, 166, 147, 0.5)
+  );
+  border-radius: 999px;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
 }
-.cw-fab:hover{
-    opacity: 0.6;
+.cw-fab:hover {
+  opacity: 0.6;
 }
-.cw-fab img{
-    width: 56px;
-    height: 56px;
+.cw-fab img {
+  width: 56px;
+  height: 56px;
 }
-.cw-panel{
-    position: absolute;
-    width: min(320px,90vw);
-    height: min(70vh,650px);
-    background: rgb(255, 243, 243,0.8);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
-    right: 65px;
-    border-radius: 12px;
-    overflow: hidden;
-    opacity: 0;
-    pointer-events: none; 
-    transition: all 0.5s ease;
+.cw-panel {
+  position: absolute;
+  width: min(320px, 90vw);
+  height: min(70vh, 650px);
+  background: rgb(255, 243, 243, 0.8);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+  right: 60px;
+  bottom: -440px;
+  border-radius: 12px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
 }
 .cw-panel.cw-open {
-    opacity: 1;
-    display: grid;
-    grid-template-rows: 48px 1fr 52px;
-    pointer-events: auto; 
-    transform: translateY(-27rem);
-  
+  opacity: 1;
+  display: grid;
+  grid-template-rows: 48px 1fr 52px;
+  pointer-events: auto;
+  transform: translateY(-470px);
 }
 
-.cw-header{
-    border-radius: 12px 12px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 12px;
-    font-weight: bold;
-    border-bottom: #110101;
-    background: #00A693;
+.cw-header {
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  font-weight: bold;
+  border-bottom: #110101;
+  background: #00a693;
 }
-.cw-header .cw-close-btn{
+.cw-header .cw-close-btn {
   border-radius: 999px;
   border: none;
   height: 2rem;
@@ -75,8 +79,7 @@
   justify-content: center;
   align-items: center;
 }
-.cw-list{
-    
+.cw-list {
   overflow: auto;
   padding: 10px;
   display: flex;
@@ -84,39 +87,42 @@
   font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
 }
-.cw-input{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #ffffff;
-    border-radius:  0 0 12px 12px;
-    padding: 0 12px;
-    gap: 5px;
-    border-top: 1px solid #cacaca ;
+.cw-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 0 0 12px 12px;
+  padding: 0 12px;
+  gap: 5px;
+  border-top: 1px solid #cacaca;
 }
-.cw-input input, .cw-input button{
-
-    height: 70%;
-    border-radius: 12px;
-
+.cw-input input,
+.cw-input button {
+  height: 70%;
+  border-radius: 12px;
 }
-.cw-input input{
-    flex: 7;
-    padding: 0 5px;
-    border: 1px solid #8b8b8b;
+.cw-input input {
+  flex: 7;
+  padding: 0 5px;
+  border: 1px solid #8b8b8b;
 }
-.cw-input button{
-    flex: 1;
-    cursor: pointer;
-    background: #00A693;
-    font-weight: bold;
-    color: white;
-    border: 1px solid #00A693;
+.cw-input input:target{
+    border: none;
+    background-color: red;
 }
-.cw-input button:hover{
-    background: white;
-    color: #000055;
-    border: 1px solid #8b8b8b;
+.cw-input button {
+  flex: 1;
+  cursor: pointer;
+  background: #00a693;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #00a693;
+}
+.cw-input button:hover {
+  background: white;
+  color: #000055;
+  border: 1px solid #8b8b8b;
 }
 .cw-msgs {
   max-width: 80%;
@@ -138,15 +144,56 @@
   color: #000000;
   border-bottom-left-radius: 1px;
 }
-.chat-bot-avatar{
-    width: 30px;
-    height: 30px;
-
+.chat-bot-avatar {
+  width: 30px;
+  height: 30px;
 }
-.halo[inert]{
-    pointer-events: none;      /* chặn click/hover vào p, sự kiện đi xuyên qua */
-  user-select: none;         /* không cho bôi đen chữ */
+.halo[inert] {
+  pointer-events: none; /* chặn click/hover vào p, sự kiện đi xuyên qua */
+  user-select: none; /* không cho bôi đen chữ */
   -webkit-user-select: none; /* Safari/Chrome iOS */
-  -ms-user-select: none;     /* Edge cũ */
-  -webkit-touch-callout: none
+  -ms-user-select: none; /* Edge cũ */
+  -webkit-touch-callout: none;
+}
+
+/* ======================== */
+@media (max-width: 420px) {
+  .cw-root {
+    /* cộng safe-area để không “ăn” vào mép máy có tai thỏ/thanh cử chỉ */
+    inset: auto calc(max(8px, env(safe-area-inset-right, 0px)))
+      calc(max(12px, env(safe-area-inset-bottom, 0px)))
+      calc(max(8px, env(safe-area-inset-left, 0px)));
+  }
+  .cw-panel {
+    right: unset; /* bỏ right:65 để khỏi tràn trái */
+    left: 8px;
+    right: 8px; /* hai mép đều 8px */
+    width: auto; /* full trừ margin 2 bên */
+    height: min(80dvh, 650px); /* cao hơn chút trên mobile */
+    bottom: calc(56px + 12px + env(safe-area-inset-bottom, 0px));
+    transform: translateY(8px); /* hiệu ứng mở nhẹ */
+  }
+  .cw-panel.cw-open {
+    opacity: 1;
+    display: grid;
+    grid-template-rows: 48px 1fr 52px;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+}
+
+/* 3) Cuộn mượt & tránh “giật” khi kéo danh sách tin nhắn */
+.cw-list {
+  overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 4) (tuỳ chọn) Nút gửi & input cao cố định, tránh co khi bàn phím bật */
+.cw-input {
+  min-height: 52px;
+}
+.cw-input input,
+.cw-input button {
+  height: 70%;
 }

@@ -96,6 +96,7 @@ body{ overflow-x:hidden; }
     flex-wrap: wrap;                 /* tránh bị tràn */
     padding: .25rem .5rem;
     gap: .5rem;
+    border-radius: 0px;
   }
   .nav .links{
     flex: 1 1 100%;                  /* cho cụm links xuống dòng, co giãn */
