@@ -11,7 +11,6 @@ export default function QuizPage() {
           <HeaderQuiz/>
           <SelectQuizzes/>
           <Quiz/>
-          <p>Quizzes created by chatgpt</p>
         </div>
     </QuizProvider>
   );

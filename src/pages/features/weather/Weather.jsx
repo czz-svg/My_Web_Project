@@ -64,13 +64,13 @@ export default function Weather() {
       city.current.value = ""
 
     const main = data.weather[0].main;
-      if (main === "Clouds") setWeatherIcon("img/clouds.png");
-      else if (main === "Mist") setWeatherIcon("img/Mist.png");
-      else if (main === "Rain") setWeatherIcon("img/rain.png");
-      else if (main === "Drizzle") setWeatherIcon("img/drizzle.png");
-      else if (main === "Clear") setWeatherIcon("img/clear.png");
-      else if (main === "Snow") setWeatherIcon("img/snow.png");
-      else if (main === "Haze") setWeatherIcon("img/haze.png");
+      if (main === "Clouds") setWeatherIcon("img/weather-icon/clouds.png");
+      else if (main === "Mist") setWeatherIcon("img/weather-icon/Mist.png");
+      else if (main === "Rain") setWeatherIcon("img/weather-icon/rain.png");
+      else if (main === "Drizzle") setWeatherIcon("img/weather-icon/drizzle.png");
+      else if (main === "Clear") setWeatherIcon("img/weather-icon/clear.png");
+      else if (main === "Snow") setWeatherIcon("img/weather-icon/snow.png");
+      else if (main === "Haze") setWeatherIcon("img/weather-icon/haze.png");
     } catch (e) {
       console.error(e);
       alert("Network error.");
@@ -88,7 +88,7 @@ export default function Weather() {
         <input type="text" ref={city} onKeyDown={(e) => e.key === "Enter" && handleClick()} placeholder="Enter city..."/>
         <button onClick={handleClick}>Search</button>
       </div>
-      {error?<p id="#alert-weather">city does not exist, please re-enter</p>:undefined}
+      {error?<p id="alert-weather">city does not exist, please re-enter</p>:undefined}
       {/* card thời tiết */}
       {info? (
         <div className="show-weather">
@@ -101,14 +101,14 @@ export default function Weather() {
           {/* details here */}
           <div className="detail-weather">
             <div className="column">
-              <img src="img/humidity.png" alt="icon-humidity" />
+              <img src="img/weather-icon/humidity.png" alt="icon-humidity" />
               <div className="humidity">
                 <p>{info.humidity}%</p>
                 <p>Humidity</p>
               </div>
             </div>
             <div className="column">
-              <img src="img/wind.png" alt="icon-wind" />
+              <img src="img/weather-icon/wind.png" alt="icon-wind" />
               <div className="wind">
                 <p>{info.wind} m/s</p>
                 <p>wind</p>
@@ -120,7 +120,7 @@ export default function Weather() {
 
           </div>
         </div>
-      ):<p>Search for city name or city name, country name to show weather</p>}
+      ):error?undefined:<p>Search for city name or city name, country name to show weather</p>}
     </>
   );
 }

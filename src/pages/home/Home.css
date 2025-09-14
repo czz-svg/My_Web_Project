@@ -1,103 +1,111 @@
 html {
   scroll-behavior: smooth;
 }
-#home-page h1{
-  border-bottom: 2px solid #00A693;
-  font-size: 3rem
+#home-page h1 {
+  border-bottom: 2px solid #00a693;
+  font-size: 3rem;
 }
-#hero{
+#hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;           /* full bề ngang container */
-  min-height: 80vh;      /* tùy: cao 80% màn hình */
+  width: 100%; /* full bề ngang container */
+  min-height: 80vh; /* tùy: cao 80% màn hình */
   box-sizing: border-box;
-  padding: 2rem 3rem;    /* chừa 2 bên, có thể chỉnh */
+  padding: 2rem 3rem; /* chừa 2 bên, có thể chỉnh */
   text-align: center;
 }
 
-#hero .text{ flex: 1.5; margin: 0 3rem;}
-#hero .text h1{ text-align: left; padding: 0; margin: 0;}
-#hero .text p{ font-size: 1.2rem; text-align: justify;}
-.btn-start{
-    background-color: #00A693;
-    width: 20rem;
-    height: 2rem;
-    font-weight: bold;
-    color: white;
-    border: none;
-    border-radius: 999px;
-    cursor: pointer;
-
-    transition: color,background-color 0.5s ease;
+#hero .text {
+  flex: 1.5;
+  margin: 0 3rem;
 }
-.btn-start:hover{background-color:#ffffff; color: #000055; border: 1px solid #000055;}
+#hero .text h1 {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+#hero .text p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.btn-start {
+  background-color: #00a693;
+  width: 20rem;
+  height: 2rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
 
-#hero .img{ flex: 1; }
-#hero .img img{
-  max-width: 100%;       /*  để ảnh co theo cột */
+  transition: color, background-color 0.5s ease;
+}
+.btn-start:hover {
+  background-color: #ffffff;
+  color: #000055;
+  border: 1px solid #000055;
+}
+
+#hero .img {
+  flex: 1;
+}
+#hero .img img {
+  max-width: 100%; /*  để ảnh co theo cột */
   height: auto;
-  display: block;        /* tránh khoảng trắng dưới ảnh */
-
+  display: block; /* tránh khoảng trắng dưới ảnh */
 }
 
-#slider-features .slider-features-title{
-
+#slider-features .slider-features-title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   margin: 6rem 12rem 0;
 }
-#slider-features .slider-features-title h1{
-
+#slider-features .slider-features-title h1 {
   margin: 0;
   min-width: 100%;
   text-align: center;
 }
-#slider-features .slider-features-title p{
+#slider-features .slider-features-title p {
   font-size: 1.2rem;
   text-align: justify;
 }
 
 /* -----------------------------video----------------- */
-.video-container{
+.video-container {
   margin: 10rem 3rem 3rem;
- 
 }
-.video-content{
-  
+.video-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;               /* Khoảng cách giữa video và text */
-  align-items:stretch;
+  gap: 2rem; /* Khoảng cách giữa video và text */
+  align-items: stretch;
 }
-.video-screen{
+.video-screen {
   flex: 0.6;
-
 }
-.video-screen iframe{
+.video-screen iframe {
   width: 100%;
   aspect-ratio: 16/9;
-
 }
-.video-text{
+.video-text {
   flex: 0.4;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-
 }
-.video-text img{
+.video-text img {
   width: 4rem;
   height: 4rem;
 }
-.video-text h2{
-  
+.video-text h2 {
+  color: #000055;
 }
-.video-text-content{
+.video-text-content {
   display: flex;
 
   align-items: center;

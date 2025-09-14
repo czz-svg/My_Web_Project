@@ -4,8 +4,8 @@
 .quiz-scope{
     display: flex;
     flex-direction: column;
-
     align-items: center;
+    min-height: 100vh;
 }
 .quiz-app {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;

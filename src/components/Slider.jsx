@@ -14,8 +14,8 @@ export default function Slider() {
   }, []);
 
 
-  console.log(`lenght: ${data?.features.length}`);
-  console.log(`index ngoai: ${index}`)
+  // console.log(`lenght: ${data?.features.length}`);
+  // console.log(`index ngoai: ${index}`)
 
   const length = data?.features?.length ?? 0;
   const handleNext = () =>

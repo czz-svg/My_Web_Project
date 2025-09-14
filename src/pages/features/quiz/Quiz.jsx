@@ -83,7 +83,7 @@ export default function Quiz() {
   });
 
   if (!questions || order.length === 0) {
-    return <div>Loading quiz…</div>;
+    return <div className="quiz-app">Loading quiz…</div>;
   }
   if (done) {
     return (
@@ -116,7 +116,7 @@ export default function Quiz() {
       </ul>
       <div className="btn-next"><button onClick={handleNext}>{!showAnswer?"check":selected?"next":"skip"}</button></div>
       </div>
-      
+      <p>Quizzes created by chatgpt</p>
     </div>
   );
 }

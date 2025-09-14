@@ -8,6 +8,7 @@ import WeatherPage from "./pages/features/weather/WeatherPage";
 import QuizPage from "./pages/features/quiz/QuizPage";
 import RandomPage from "./pages/features/random/RandomPage";
 import Footer from "./components/Footer";
+import ChatWidget from "./widget/ChatWidget";
 
 function App() {
   return (
@@ -39,6 +40,9 @@ function App() {
                 <NavLink to="/features/random" className="link">
                   Random
                 </NavLink>
+                <NavLink to="https://www.youtube.com/@HaHaHa-m7u"  target="_blank" rel="noopener noreferrer" className="link">
+                  Video
+                </NavLink>
               </div>
             </div>
             <NavLink to="/contact" className="link">
@@ -61,6 +65,7 @@ function App() {
           </Routes>
         </main>
       </div>
+        <ChatWidget/>
         <Footer/>
     </>
   );

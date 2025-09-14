@@ -53,8 +53,8 @@ export default function Home() {
         <div className="video-content">
           <div className="video-screen">
             <iframe
-              src="https://www.youtube.com/embed/W1EqkmoUgDU"
-              frameborder="0"
+              src="https://www.youtube.com/embed/pgs1ISHz5Fc"
+              frameBorder="0"
               title="YouTube video"
               allowFullScreen
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
