@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+section{
+  margin-bottom: 2rem;
+}
 #home-page h1 {
   border-bottom: 2px solid #00a693;
   font-size: 3rem;
@@ -12,7 +15,7 @@ html {
   width: 100%; /* full bề ngang container */
   min-height: 80vh; /* tùy: cao 80% màn hình */
   box-sizing: border-box;
-  padding: 2rem 3rem; /* chừa 2 bên, có thể chỉnh */
+  padding: 0 3rem; /* chừa 2 bên, có thể chỉnh */
   text-align: center;
 }
 
@@ -61,7 +64,7 @@ html {
   flex-direction: column;
   align-items: center;
 
-  margin: 6rem 12rem 0;
+  margin: 0 12rem;
 }
 #slider-features .slider-features-title h1 {
   margin: 0;
@@ -75,7 +78,7 @@ html {
 
 /* -----------------------------video----------------- */
 .video-container {
-  margin: 10rem 3rem 3rem;
+  margin: 5rem;
 }
 .video-content {
   display: flex;

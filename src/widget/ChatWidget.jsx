@@ -28,15 +28,19 @@ export default function ChatWidget(){
         if(t2.includes("lam gi")|| t2.includes("lam dc gi")|| t2.includes("lam duoc gi")){
             setTimeout(()=>{
             setMsgs(m=>[...m,{who:"bot",text:`mình không làm được gì hết ☺️`}])
-        })
+        },1000)
+        setTimeout(()=>{
+            setMsgs(m=>[...m,{who:"bot",text:`sao bạn không tham quan trang web đi ☺️`}])
+        },2000)
+        
         }else if(/hello|hi|xin chao|halo/.test(t2)){
             setTimeout(()=>{
-            setMsgs(m=>[...m,{who:"bot",text:` hello~ friend 🤓`}])
-        })
+            setMsgs(m=>[...m,{who:"bot",text:` halo~ friend 🤓`}])
+        },1000)
         } else{
             setTimeout(()=>{
-            setMsgs(m=>[...m,{who:"bot",text:`mình thể chưa xử lý được yêu cầu "${t}" của bạn 😢 sao bạn không hỏi mình có thể làm được gì không 🤓`}])
-        })
+            setMsgs(m=>[...m,{who:"bot",text:`mình thể chưa xử lý được yêu cầu "${t}" của bạn 😢 sao bạn không hỏi mình có thể làm được gì không 🤓`}],)
+        },1000)
         }
         //
         setText("");
