@@ -1,3 +1,6 @@
+*{ box-sizing: border-box; }
+.nav{ width:100%; box-sizing:border-box; }
+body{ overflow-x:hidden; }
 .logo{
     background: white;
     display: block;
@@ -86,4 +89,30 @@
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
+}
+
+@media (max-width: 768px){
+  .nav{
+    flex-wrap: wrap;                 /* tránh bị tràn */
+    padding: .25rem .5rem;
+    gap: .5rem;
+  }
+  .nav .links{
+    flex: 1 1 100%;                  /* cho cụm links xuống dòng, co giãn */
+    min-width: 0;                    /* cho phép co nhỏ, tránh tràn */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .75rem 1rem;
+    padding-right: 0;                /* bỏ 6rem gây tràn */
+    font-size: 1rem;
+  }
+  .logo{
+    display:flex;                    /* bỏ display:block */
+    gap: .5rem;
+    padding: 0 .5rem;
+    border-width: .3rem;             /* viền mỏng lại để tiết kiệm chiều ngang */
+  }
+  .logo img{ width: 2.4rem; }
+  .logo .logo-text{ font-size: 1.4rem; }
 }

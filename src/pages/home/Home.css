@@ -114,3 +114,59 @@ section{
   align-items: center;
   gap: 1rem;
 }
+/* ========== MOBILE PATCH (≤768px) ========== */
+@media (max-width: 768px) {
+  /* HERO */
+  #hero{
+    flex-direction: column;      /* 2 cột -> 1 cột */
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 1rem;               /* bớt padding */
+    min-height: auto;
+    text-align: center;
+  }
+  #hero .text{
+    flex: none;
+    margin: 0;
+  }
+  #hero .img{
+    flex: none;
+    width: 100%;
+    display: grid;
+    place-items: center;         /* canh giữa ảnh */
+  }
+  #hero .img img{
+    width: min(92vw, 420px);     /* to hết cỡ màn, nhưng không vượt 420px */
+    height: auto;
+  }
+  .btn-start{
+    width: clamp(10rem, 60vw, 20rem);
+    height: 2.5rem;
+  }
+
+  /* VIDEO BLOCK */
+  .video-container{ margin: 2rem 1rem; }
+  .video-content{
+    flex-direction: column;      /* 2 cột -> 1 cột */
+    align-items: center;
+    gap: 1rem;
+  }
+  .video-screen,
+  .video-text{
+    flex: none;
+    width: 100%;
+  }
+  .video-screen iframe{
+    width: 100%;
+    max-width: 640px;            /* tránh quá to trên tablet */
+    display: block;
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+  }
+
+  /* Slider title bớt lề để không bóp nội dung */
+  #slider-features .slider-features-title{
+    margin: 0 1rem;
+  }
+}
